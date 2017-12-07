@@ -11,6 +11,11 @@ public class PageController {
 		return "index";
 	}
 	
+	/**
+	 * index.jsp, 跳转其他页
+	 * @param page
+	 * @return
+	 */
 	@RequestMapping("/{page}")
 	public String showpage(@PathVariable String page) {
 		return page;
